@@ -8,6 +8,7 @@ library(shiny)
 # )
 library(caret)
 data(iris)
+library(e1071)
 #modlda <- train(Species ~ ., data = iris, method="lda")
 #modelAccuracy <- round(modlda$results$Accuracy, 3)
 shinyServer(
