@@ -15,9 +15,9 @@ shinyServer(
                          names(sample) <- names(iris)[3:4]
                          as.character(predict(modlda, sample ))
                 })
-
-                output$text3 <- renderText({paste("The Petal Length sample measurement is",input$PL, "cm")})
-                output$text4 <- renderText({paste("The Petal Width sample measurement is",input$PW, "cm")})
+                
+                output$pwidth <- renderText({paste("The Petal Width sample measurement is",input$PW, "cm")})
+                output$plength <- renderText({paste("The Petal Length sample measurement is",input$PL, "cm")})
                 output$modelAccuracy <- renderText({paste("The accuracy of this model is ", modelAccuracy)})
                 output$answer <- renderText({paste("The Species is most likely ", answer())})
         }
