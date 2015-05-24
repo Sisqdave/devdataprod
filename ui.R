@@ -19,7 +19,7 @@ shinyUI(fluidPage(
                 h5("Setosa- width 0.5cm, length 1.5cm"),
                 h5("Versicolor - width 1.2cm, length 4.0cm"),
                 h5("Virginica - width 2.5cm, length 6.0cm"),
-                textOutput("pwwidth"),
+                textOutput("pwidth"),
                 textOutput("plength"),
                 h5("Using a LDA model on the famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica."),
                 textOutput("modelAccuracy"),
